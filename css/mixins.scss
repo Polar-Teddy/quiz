@@ -1,0 +1,60 @@
+@import "variables";
+
+//Allgemein
+@mixin body {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: $font;
+}
+
+@mixin box {
+  color: $white;
+  border: 0;
+  margin-bottom: 30px;
+  background-color: rgba(192, 192, 192, 0.3);
+}
+
+//Forms
+@mixin formBox {
+  background-color: $backgroundBox;
+  color: black;
+  width: 80%;
+}
+
+@mixin formInput {
+  width: 80%;
+  margin-top: 10px;
+}
+
+//Buttons
+@mixin buttonMenu {
+  background-color: rgba(255, 255, 255, 0.4);
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  color: black;
+  margin-top: 35px;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+@mixin buttonMenuHover {
+  background-color: #050504;
+  color: $white;
+}
+
+@mixin buttonSubmit {
+  input[type=submit], button[type=submit] {
+    font-family: "Verdana", monospace;
+    border-radius: 5px;
+    font-size: 18px;
+  }
+  input[type=submit]:hover, button[type=submit]:hover {
+    background-color: #050504;
+    box-shadow: #dcdcdc;
+    color: #dddddd;
+  }
+
+}

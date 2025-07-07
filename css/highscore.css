@@ -1,0 +1,58 @@
+
+.body{
+    background-image: url("highscore.png");
+}
+
+
+  h1, h2, h3, h4 {
+      color: white;
+      text-shadow: 3px 5px 5px #000000;
+  }
+
+.feedback {
+    text-align: center;
+    margin-top: 50px;
+    font-size: large;
+}
+
+.feedback a:link, .feedback a:visited {
+    background-color: rgb(206, 189, 92);
+    color: black;
+    border: 2px solid #3d2605;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.feedback a:hover, .feedback a:active {
+    background-color: #8d6110;
+    color: white;
+}
+
+
+#feedback {
+    margin-left: 20%;
+    font-family: Verdana, monospace;
+    border-collapse: collapse;
+    width: 60%;
+}
+
+#feedback td, #feedback th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+#feedback tr{ background-color: rgba(248, 245, 242, 0.8);}
+#feedback tr:nth-child(even){background-color: rgba(176, 172, 172, 0.8);}
+
+#feedback tr:hover {
+    background-color: rgba(173, 157, 126, 0.8);
+}
+
+#feedback th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: rgba(42, 24, 5, 0.8);
+    color: white;
+}

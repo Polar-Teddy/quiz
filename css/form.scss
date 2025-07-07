@@ -1,0 +1,204 @@
+@import "variables";
+@import "mixins";
+
+//Allgemeiner Body mit Hintergrund-Bild etc.
+body {
+  padding: 35px 0 0 50px;
+  color: $white;
+  background-image: url("input.jpg");
+  background-size: contain;
+  @include body;
+}
+
+.showTop{
+  color: black;
+  margin-bottom: 30px;
+  background-color: rgba(192, 192, 192, 0.738);
+  width: 220px;
+  text-align: center;
+;
+}
+//Überschrift mit Verlinkung zum Spiel
+.indexheader {
+  margin-right: 250px;
+  float:right;
+  width: 450px;
+
+  h2 {
+    text-align: center;
+    color:white;
+  }
+
+  a:link, a:visited {
+    @include buttonMenu;
+    margin-left: 120px;
+
+  }
+
+  a:hover, a:active {
+    @include buttonMenuHover;
+  }
+}
+
+//Auswahl-Box
+fieldset {
+  padding-left: 40px;
+  color: white;
+  border: 0;
+  margin-bottom: 30px;
+  background-color: rgba(59, 56, 56, 0.76);
+  color: $white;
+
+  .quan_ques, .quan_top {
+    margin: 20px;
+    float: left;
+  }
+
+  .questop {
+    margin: 20px;
+    clear: left;
+    color: $black;
+  }
+}
+
+//Form-Boxen für Fragen & Antworten
+.thema {
+  text-align: center;
+  font-size: medium;
+  border: solid goldenrod 5px;
+  @include formBox;
+  width: 50%;
+  padding: 15px 20px 0 20px;
+}
+
+.topic {
+  @include formBox;
+  border: solid sienna 5px;
+  padding: 15px 0 0 125px;
+  margin-bottom: 25px;
+}
+
+.question_box {
+  @include formBox;
+  border: solid #73a96c 5px;
+}
+
+.thema input {
+  width: 30%;
+  margin-top: 10px;
+}
+
+.topic, .question, .answer input {
+  @include formInput;
+}
+
+.choice input {
+  @include formInput;
+  margin-bottom: 10px;
+}
+
+.question_box {
+  .points {
+    input {
+      text-align: center;
+      width: 5%;
+    }
+
+    padding: 10px 0 10px 50px;
+  }
+
+  .question {
+    input {
+      width: 100%;
+    }
+
+    padding: 10px 0 10px 50px;
+  }
+
+  .answer {
+    input {
+      width: 85%;
+    }
+
+    padding: 10px 0 10px 150px;
+  }
+
+  .choice {
+    input {
+      width: 85%;
+    }
+
+    padding: 10px 0 10px 200px;
+  }
+}
+
+@include buttonSubmit;
+
+.player {
+  background-color: rgba(150, 150, 150, 0.56);
+  font-family: Verdana, monospace;
+  float:right;
+  margin-top:5%;
+  padding-top:15px;
+  width: 40%;
+  padding-bottom: 25px;
+  text-align: center;
+  margin-right: 100px;
+
+  h1,h2,h3,h4,h5{
+    color:$white;
+    text-shadow: 3px 5px 5px #000000;
+  }
+  button, input[type=submit] {
+    font-family: Verdana, monospace;
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 60px;
+    height: 60px;
+    font-size: x-large;
+  }
+  button:hover, input[type=submit]:hover{
+    background-color: rgba(225, 167, 7, 0.5);
+    color: black;
+  }
+  input[type=text]{
+    text-align: center;
+    font-family: Verdana, monospace;
+    font-size: large;
+    background-color: rgba(255, 255, 255, 0.75);
+    color: $black;
+    border: rgba(255, 255, 255, 0.8) outset;
+    border-radius: 2em;
+  }
+}
+
+.makequiz {
+  margin-top:30px;
+  text-align:center;
+  display: -webkit-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+
+  a:link, a:visited {
+    @include buttonMenu;
+    margin: auto;
+  }
+  a:hover, a:active {
+    @include buttonMenuHover;
+    margin: auto;
+  }
+}
+
+.general_buttons input[type=submit] {
+  background-color: #b8a176;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
