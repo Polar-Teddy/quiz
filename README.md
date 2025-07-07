@@ -4,8 +4,19 @@
 Ein Quiz-Programm auf PHP-Basis zum Erstellen und Spielen
 eines selbst-gestalteten Quizes mit unterschiedlichen Themenbereichen.
 
+![main](img/Screenshot_main.png)
+
 ## Was erwartet dich?
 Verschiedene Themenbereiche mit Fragen in unterschiedlichen Schwierigkeitsgraden.
+
+![menu](img/Screenshot_menu.png)
+
+![question](img/Screenshot_question.png)
+
+![answer](img/Screenshot_answer.png)
+
+![highscore](img/Screenshot_highscore.png)
+
 ***
 
 ## Installation
